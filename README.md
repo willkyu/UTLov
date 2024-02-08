@@ -5,7 +5,7 @@
 实际演示请看视频[https://www.bilibili.com/video/BV144421c7pP/?vd_source=e1ff0185e3ca082e7577b5654e16f3da].
 
 运行截图:
-[](https://github.com/willkyu/UTLov/blob/main/screenshot.png)
+[](https://raw.githubusercontent.com/willkyu/UTLov/main/screenshot.png)
 
 ## 使用环境
 
