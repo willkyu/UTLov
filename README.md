@@ -28,7 +28,7 @@
 
 首先是资源文件夹的文件结构如下图所示:
 
-[](https://github.com/willkyu/UTLov/blob/main/files.png)
+[](./files.png)
 
 > 这里我的资源文件夹就是data. 其中, 打码的部分为用户的QQ号.
 
