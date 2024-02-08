@@ -1,0 +1,17 @@
+{
+    "name" : "UTLov",
+    "author" : "willkyu",
+    "namespace" : "UTLov",
+    "info" : "Untitled Tavern 特制插件",
+    "priority" : 30000,
+    "version" : "1.0",
+    "svn" : 2,
+    "compatible_svn" : 101,
+    "support" : [
+        {
+            "sdk" : "all",
+            "platform" : "all",
+            "model" : "all"
+        }
+    ]
+}
