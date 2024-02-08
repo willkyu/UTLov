@@ -4,6 +4,9 @@
 
 实际演示请看视频[https://www.bilibili.com/video/BV144421c7pP/?vd_source=e1ff0185e3ca082e7577b5654e16f3da].
 
+运行截图:
+[](https://github.com/willkyu/UTLov/blob/main/screenshot.png)
+
 ## 使用环境
 
 - 源码运行的OlivOS, 因为我们需要在运行环境里引入其他第三方库, 我这里使用的是3.11版本的python
@@ -25,7 +28,7 @@
 
 首先是资源文件夹的文件结构如下图所示:
 
-[](/files.png)
+[](https://github.com/willkyu/UTLov/blob/main/files.png)
 
 > 这里我的资源文件夹就是data. 其中, 打码的部分为用户的QQ号.
 
@@ -53,7 +56,7 @@ PL的资源文件夹主要有三个文件:
 
 下图是该文件的一个示例.
 
-[](userinfo.png)
+[](https://github.com/willkyu/UTLov/blob/main/userinfo.png)
 
 其中Main模块中的name和job分别为PC的名字和职业.
 
@@ -106,7 +109,7 @@ npc文件夹里面包含:
 #### audio.ini
 下图是该文件的一个示例.
 
-[](/audio.png)
+[](https://github.com/willkyu/UTLov/blob/main/audio.png)
 
 同PL的配置文件`userinfo`里的audio模块. 注意, 上述配置文件`default_male`与`default_female`的文件内容与这个一致(具体声音配置可以更改).
 
@@ -116,7 +119,7 @@ npc文件夹里面包含:
 ### UTLov.ini
 主配置文件, 下图是该文件的一个示例.
 
-[](/UTLov.png)
+[](https://github.com/willkyu/UTLov/blob/main/UTLov.png)
 
 其中Main模块的Master_id是用于触发启动命令的QQ号, 一般为运行OlivOS的电脑的所有者. KP_id是KP的QQ号, Group_id是运行该插件的群号. Opening是插件启动时自动用KP配置说出的话, 已被废弃, 可以不要. Bot_name为显示在窗口中的的骰娘名字.
 
