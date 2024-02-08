@@ -53,7 +53,7 @@ PL的资源文件夹主要有三个文件:
 
 下图是该文件的一个示例.
 
-[](/userinfo.png)
+[](userinfo.png)
 
 其中Main模块中的name和job分别为PC的名字和职业.
 
