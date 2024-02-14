@@ -5,7 +5,7 @@ from aip import AipSpeech
 import threading
 import os
 from queue import Queue
-from openai import OpenAI
+# from openai import OpenAI
  
 try:
 	from .ConfigTool import *
