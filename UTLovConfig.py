@@ -26,7 +26,12 @@ class ConfigReader():
         self.path=path
         self.result={}
         if not os.path.exists(self.path+'UTLov.ini'):
-            return False
+            cfg['Path']+='/'
+            self.path=path
+            if not os.path.exists(self.path+'UTLov.ini'):
+                print("Wrong path!")
+                return
+            # return False
         self.config = configparser.ConfigParser()
         self.config.optionxform = lambda option: option
         self.config.read(self.path+'UTLov.ini', encoding='utf-8')
