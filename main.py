@@ -26,13 +26,14 @@ def start(plugin_event,Proc):
     message=plugin_event.data.message
     if (message.lower()==".utlov" or message.lower()=="。utlov") and plugin_event.data.user_id==config.data['Master_id']:
         UTLovv.running=True
-        plugin_event.reply("UTLov已开启...")
         flet.app(target=UTLovv.start)
+        plugin_event.reply("UTLov已开启...")
 
 def end(plugin_event,Proc):
     message=plugin_event.data.message
     if (message.lower()==".utlov end" or message.lower()=="。utlov end") and plugin_event.data.user_id==config.data['Master_id']:
         plugin_event.reply("UTLov已关闭...\n感谢各位PL以及OBer！")
+        time.sleep(5)
         UTLovv.running=False
         UTLovv.close()
 
@@ -68,13 +69,13 @@ def if_roll(message):
 
 
 def unity_send(plugin_event,Proc):
-    # if plugin_event.data.group_id != config.data["group_id"]:
-    #     return
-    message=plugin_event.data.message
+    if plugin_event.data.group_id != config.data["Group_id"]:
+        return
     # print(message)
     if not UTLovv.running:
         return
-    print(message)
+    message=plugin_event.data.message
+    # print(message)
     UTLovv.bot_message(message)
                
     
