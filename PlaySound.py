@@ -31,11 +31,11 @@ class SoundPlayer():
 			API_KEY = api_info["API_KEY"]
 			SECRET_KEY = api_info["SECRET_KEY"]
 			self.client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
-		elif self.type=='Openai':
-			api_info=config.data["OpenaiAPI"]
-			print(api_info["SECRET_KEY"])
-			SECRET_KEY = api_info["SECRET_KEY"]
-			self.client = OpenAI(api_key=config.data['OpenaiAPI'])
+		# elif self.type=='Openai':
+		# 	api_info=config.data["OpenaiAPI"]
+		# 	print(api_info["SECRET_KEY"])
+		# 	SECRET_KEY = api_info["SECRET_KEY"]
+		# 	self.client = OpenAI(api_key=config.data['OpenaiAPI'])
 		self.current_thread=None
 		self.queue=Queue(0)
 		pass
