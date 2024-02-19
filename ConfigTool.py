@@ -48,15 +48,15 @@ class Config:
         if type in ['hp','hpmax','mp','mpmax','san','sanmax','status']:
             new_cfg=configparser.ConfigParser()
             new_cfg.optionxform = lambda option: option
-            # new_cfg.read(self.path+'{}/userinfo.ini'.format(pc_id), encoding='utf-8')
-            main={}
-            new_cfg['Main']=main
-            # print(self.data[pc_id])
-            for k,v in self.data[pc_id].items():
-                if not isinstance(v,dict) and k!='avatar' and k!='fig':
-                    new_cfg['Main'][k]=v
-                else:
-                    new_cfg[k]=v
+            new_cfg.read(self.data['Path']+'{}/userinfo.ini'.format(pc_id), encoding='utf-8')
+            # main={}
+            # new_cfg['Main']=main
+            # # print(self.data[pc_id])
+            # for k,v in self.data[pc_id].items():
+            #     if not isinstance(v,dict) and k!='avatar' and k!='fig':
+            #         new_cfg['Main'][k]=v
+            #     else:
+            #         new_cfg[k]=v
             new_cfg['status'][type]=value
             with open(self.data['Path']+'{}/userinfo.ini'.format(pc_id),'w', encoding='utf-8') as p:
                 new_cfg.write(p)
